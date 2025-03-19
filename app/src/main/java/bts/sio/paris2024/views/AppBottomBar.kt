@@ -5,6 +5,7 @@ import androidx.compose.material.icons.filled.AttachMoney
 import androidx.compose.material.icons.filled.SportsMartialArts
 import androidx.compose.material.icons.filled.Description
 import androidx.compose.material.icons.filled.Flag
+import androidx.compose.material.icons.filled.Grade
 import androidx.compose.material.icons.filled.Home
 import androidx.compose.material.icons.filled.Person
 import androidx.compose.material.icons.filled.PinDrop
@@ -22,7 +23,6 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.navigation.NavController
 
-
 @Composable
 fun AppBottomBar(navController: NavController) {
 
@@ -30,7 +30,9 @@ fun AppBottomBar(navController: NavController) {
         BottomNavItem("Pays", "pays_list", Icons.Filled.Flag),
         BottomNavItem("Athlete", "athlete_list", Icons.Filled.SportsMartialArts),
         BottomNavItem("Site", "site_list", Icons.Filled.PinDrop),
-        BottomNavItem("Sport", "sport_list", Icons.Filled.SportsBasketball),)
+        BottomNavItem("Sport", "sport_list", Icons.Filled.SportsBasketball),
+        BottomNavItem("Olympiade", "olympiade_list", Icons.Filled.Grade)  // Corrigé ici
+    )
 
     var selectedItem by remember { mutableStateOf(0) }
 
