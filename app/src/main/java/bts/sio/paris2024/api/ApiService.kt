@@ -1,6 +1,7 @@
 package bts.sio.paris2024.api
 
 import bts.sio.paris2024.model.Athlete
+import bts.sio.paris2024.model.Joueur
 import bts.sio.paris2024.model.Olympiade
 import bts.sio.paris2024.model.Pays
 import bts.sio.paris2024.model.Site
@@ -18,4 +19,6 @@ interface ApiService {
     suspend fun getAthlete(): List<Athlete>
     @GET("/olympiades")
     suspend fun getOlympiade(): List<Olympiade>
+    @GET("/joueurs")
+    suspend fun getJoueur(): List<Joueur>
     }
